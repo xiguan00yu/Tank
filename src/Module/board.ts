@@ -1,5 +1,5 @@
 import five from "johnny-five";
-import { RaspiIO } from "raspi-io";
+const RaspiIO = require("raspi-io").RaspiIO;
 
 export type IBoardListener = (ioBoard: five.Board) => void;
 
