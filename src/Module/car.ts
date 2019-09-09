@@ -22,6 +22,24 @@ class Car {
             right.stop();
         }
     };
+    public left = (speed: number): void => {
+        const [left, right] = this.getMotor();
+        if (left) {
+            left.reverse(speed);
+        }
+        if (right) {
+            right.forward(speed);
+        }
+    };
+    public right = (speed: number): void => {
+        const [left, right] = this.getMotor();
+        if (left) {
+            left.forward(speed);
+        }
+        if (right) {
+            right.reverse(speed);
+        }
+    };
     public reverse = (speed: number): void => {
         const [left, right] = this.getMotor();
         if (left) {

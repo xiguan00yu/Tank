@@ -4,7 +4,7 @@
             {
                 "match": ".*",
                 "isAsync": true,
-                "cmd": "scp -r src pi@pi.com:~/Project/Tank/. && scp -r package.json pi@pi.com:~/Project/Tank/. && echo 'SCP Success !'"
+                "cmd": "scp -r src pi@172.20.10.13:~/Project/Tank/. && scp -r package.json pi@172.20.10.13:~/Project/Tank/. && echo 'SCP Success !'"
             }
         ]
     }

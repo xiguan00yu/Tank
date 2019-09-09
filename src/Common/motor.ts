@@ -8,9 +8,9 @@ export default {
     },
     RIGHT: {
         pins: {
-            cdir: 24,
-            dir: 25,
-            pwm: 23
+            cdir: 4,
+            dir: 5,
+            pwm: 6
         }
     }
 };
