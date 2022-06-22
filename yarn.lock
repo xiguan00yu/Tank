@@ -132,6 +132,10 @@
   dependencies:
     "@types/node" "*"
 
+abstract-io@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/abstract-io/-/abstract-io-1.6.0.tgz#f423a75cad7301af53d8fddbcf490a14929786d2"
+
 accepts@~1.3.4, accepts@~1.3.7:
   version "1.3.7"
   resolved "https://registry.npm.taobao.org/accepts/download/accepts-1.3.7.tgz#531bc726517a3b2b41f850021c6cc15eaab507cd"
@@ -174,21 +178,9 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
-array-filter@~0.0.0:
-  version "0.0.1"
-  resolved "https://registry.npm.taobao.org/array-filter/download/array-filter-0.0.1.tgz#7da8cf2e26628ed732803581fd21f67cacd2eeec"
-
 array-flatten@1.1.1:
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/array-flatten/download/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
-
-array-map@~0.0.0:
-  version "0.0.0"
-  resolved "https://registry.npm.taobao.org/array-map/download/array-map-0.0.0.tgz#88a2bab73d1cf7bcd5c1b118a003f66f665fa662"
-
-array-reduce@~0.0.0:
-  version "0.0.0"
-  resolved "https://registry.npm.taobao.org/array-reduce/download/array-reduce-0.0.0.tgz#173899d3ffd1c7d9383e4479525dbe278cab5f2b"
 
 arraybuffer.slice@~0.0.7:
   version "0.0.7"
@@ -220,7 +212,7 @@ better-assert@~1.0.0:
   dependencies:
     callsite "1.0.0"
 
-bindings@^1.3.0:
+bindings@^1.3.0, bindings@^1.5.0:
   version "1.5.0"
   resolved "https://registry.npm.taobao.org/bindings/download/bindings-1.5.0.tgz#10353c9e945334bc0511a6d90b38fbc7c9c504df"
   dependencies:
@@ -309,6 +301,10 @@ chalk@^2.0.0, chalk@^2.3.0, chalk@^2.4.1:
 chownr@^1.0.1:
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/chownr/download/chownr-1.1.1.tgz#54726b8b8fff4df053c42187e801fb4412df1494"
+
+clone@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/clone/-/clone-2.1.2.tgz#1b7f4b9f591f1e8f83670401600345a02887435f"
 
 code-point-at@^1.0.0:
   version "1.1.0"
@@ -716,6 +712,13 @@ http-errors@~1.7.2:
     statuses ">= 1.5.0 < 2"
     toidentifier "1.0.0"
 
+i2c-bus@^5.1.0:
+  version "5.2.2"
+  resolved "https://registry.yarnpkg.com/i2c-bus/-/i2c-bus-5.2.2.tgz#0c727f5e99443c5734b4f0e05b45748ba85008fa"
+  dependencies:
+    bindings "^1.5.0"
+    nan "^2.14.2"
+
 iconv-lite@0.4.24:
   version "0.4.24"
   resolved "https://registry.npm.taobao.org/iconv-lite/download/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
@@ -740,6 +743,10 @@ inherits@2, inherits@2.0.3, inherits@~2.0.3:
 inherits@2.0.4:
   version "2.0.4"
   resolved "https://registry.npm.taobao.org/inherits/download/inherits-2.0.4.tgz?cache=0&sync_timestamp=1560975547815&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Finherits%2Fdownload%2Finherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
+
+ini-builder@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/ini-builder/-/ini-builder-1.1.1.tgz#4579a1365c73b1ac8ef88ff36f8a72c7bc228e23"
 
 ini@~1.3.0:
   version "1.3.5"
@@ -795,6 +802,17 @@ isexe@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/isexe/download/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
 
+j5-io-types@^2.4.0, j5-io-types@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/j5-io-types/-/j5-io-types-2.5.0.tgz#dffdfcf993dcf10fc66f187edaef8d2dda02a1c7"
+
+j5-io@^3.1.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/j5-io/-/j5-io-3.2.0.tgz#e070c648c433e301ac53a57357e952777dbfc72c"
+  dependencies:
+    abstract-io "^1.6.0"
+    j5-io-types "^2.5.0"
+
 johnny-five@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npm.taobao.org/johnny-five/download/johnny-five-1.1.0.tgz#26e75a296ccbc8767d8a1885a4d2fee7e0192e86"
@@ -825,10 +843,6 @@ js-yaml@^3.13.0:
 json-parse-better-errors@^1.0.1:
   version "1.0.2"
   resolved "https://registry.npm.taobao.org/json-parse-better-errors/download/json-parse-better-errors-1.0.2.tgz#bb867cfb3450e69107c131d1c514bab3dc8bcaa9"
-
-jsonify@~0.0.0:
-  version "0.0.0"
-  resolved "https://registry.npm.taobao.org/jsonify/download/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
 
 load-json-file@^4.0.0:
   version "4.0.0"
@@ -912,6 +926,10 @@ ms@2.1.1, ms@^2.1.1:
 nan@^2.13.2:
   version "2.13.2"
   resolved "https://registry.npm.taobao.org/nan/download/nan-2.13.2.tgz#f51dc7ae66ba7d5d55e1e6d4d8092e802c9aefe7"
+
+nan@^2.14.0, nan@^2.14.2:
+  version "2.16.0"
+  resolved "https://registry.yarnpkg.com/nan/-/nan-2.16.0.tgz#664f43e45460fb98faf00edca0bb0d7b8dce7916"
 
 nanotimer@0.3.10:
   version "0.3.10"
@@ -1056,6 +1074,13 @@ pify@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/pify/download/pify-3.0.0.tgz#e5a4acd2c101fdf3d9a4d07f0dbc4db49dd28176"
 
+pigpio@^1.2.1:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/pigpio/-/pigpio-1.3.0.tgz#727766ff3acd9a53d72ec25debb9e33d17717a3e"
+  dependencies:
+    bindings "^1.5.0"
+    nan "^2.14.0"
+
 prebuild-install@^5.2.1:
   version "5.3.0"
   resolved "https://registry.npm.taobao.org/prebuild-install/download/prebuild-install-5.3.0.tgz#58b4d8344e03590990931ee088dd5401b03004c8"
@@ -1109,6 +1134,85 @@ qs@6.7.0:
 range-parser@~1.2.1:
   version "1.2.1"
   resolved "https://registry.npm.taobao.org/range-parser/download/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
+
+raspi-board@^7.0.0, raspi-board@^7.1.0, raspi-board@^7.1.2:
+  version "7.4.0"
+  resolved "https://registry.yarnpkg.com/raspi-board/-/raspi-board-7.4.0.tgz#24287dead65c74cfe3ed8b6e52882a640f6a51c5"
+  dependencies:
+    j5-io-types "^2.4.0"
+
+raspi-gpio@^6.2.1:
+  version "6.2.2"
+  resolved "https://registry.yarnpkg.com/raspi-gpio/-/raspi-gpio-6.2.2.tgz#18f7ef7eac6dd9ee2e70f4e9e690180c3f4fcd58"
+  dependencies:
+    j5-io-types "^2.4.0"
+    pigpio "^1.2.1"
+    raspi-board "^7.1.2"
+    raspi-peripheral "^3.0.3"
+
+raspi-i2c@^6.2.2:
+  version "6.2.4"
+  resolved "https://registry.yarnpkg.com/raspi-i2c/-/raspi-i2c-6.2.4.tgz#be22abfba708ce5b02a2fcac27d4466a231ca680"
+  dependencies:
+    i2c-bus "^5.1.0"
+    ini-builder "^1.1.1"
+    j5-io-types "^2.5.0"
+    raspi-board "^7.1.0"
+    raspi-peripheral "^3.0.3"
+
+raspi-io@^10.0.2:
+  version "10.0.4"
+  resolved "https://registry.yarnpkg.com/raspi-io/-/raspi-io-10.0.4.tgz#7df2b86169d7a68937c26c5dad7149b0cca45f52"
+  dependencies:
+    clone "^2.1.2"
+    j5-io "^3.1.0"
+    j5-io-types "^2.4.0"
+    raspi "^6.0.1"
+    raspi-board "^7.1.2"
+    raspi-gpio "^6.2.1"
+    raspi-i2c "^6.2.2"
+    raspi-led "^2.1.1"
+    raspi-serial "^5.1.1"
+    raspi-soft-pwm "^6.0.1"
+
+raspi-led@^2.1.1:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/raspi-led/-/raspi-led-2.1.2.tgz#27f6133fe2a13ed2f854eae9fb3f777cceb16f70"
+  dependencies:
+    j5-io-types "^2.4.0"
+    raspi-peripheral "^3.0.3"
+
+raspi-peripheral@^3.0.3:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/raspi-peripheral/-/raspi-peripheral-3.0.4.tgz#6b39fc99083ef8eace3c77b2d29ab646c0f9da96"
+  dependencies:
+    j5-io-types "^2.4.0"
+    raspi "^6.0.1"
+    raspi-board "^7.1.2"
+
+raspi-serial@^5.1.1:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/raspi-serial/-/raspi-serial-5.1.2.tgz#521d2c5daf433fe9467733260922ab9136739737"
+  dependencies:
+    j5-io-types "^2.4.0"
+    raspi-peripheral "^3.0.3"
+    serialport "^7.1.4"
+
+raspi-soft-pwm@^6.0.1:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/raspi-soft-pwm/-/raspi-soft-pwm-6.0.2.tgz#80a7207841131344fed969b2fee7234d0e234dca"
+  dependencies:
+    j5-io-types "^2.4.0"
+    pigpio "^1.2.1"
+    raspi-board "^7.1.2"
+    raspi-peripheral "^3.0.3"
+
+raspi@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/raspi/-/raspi-6.0.1.tgz#a74d51b6764bbd24b676ad3c01dffcf353354ccd"
+  dependencies:
+    j5-io-types "^2.4.0"
+    raspi-board "^7.0.0"
 
 raw-body@2.4.0:
   version "2.4.0"
@@ -1190,7 +1294,7 @@ send@0.17.1:
     range-parser "~1.2.1"
     statuses "~1.5.0"
 
-serialport@^7.1.3, serialport@^7.1.5:
+serialport@^7.1.3, serialport@^7.1.4, serialport@^7.1.5:
   version "7.1.5"
   resolved "https://registry.npm.taobao.org/serialport/download/serialport-7.1.5.tgz#3395e3cc33c6584731ccce62aaa82b0f6b7e0077"
   dependencies:
@@ -1233,13 +1337,8 @@ shebang-regex@^1.0.0:
   resolved "https://registry.npm.taobao.org/shebang-regex/download/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
 
 shell-quote@^1.6.1:
-  version "1.6.1"
-  resolved "https://registry.npm.taobao.org/shell-quote/download/shell-quote-1.6.1.tgz#f4781949cce402697127430ea3b3c5476f481767"
-  dependencies:
-    array-filter "~0.0.0"
-    array-map "~0.0.0"
-    array-reduce "~0.0.0"
-    jsonify "~0.0.0"
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.7.3.tgz#aa40edac170445b9a431e17bb62c0b881b9c4123"
 
 signal-exit@^3.0.0:
   version "3.0.2"
